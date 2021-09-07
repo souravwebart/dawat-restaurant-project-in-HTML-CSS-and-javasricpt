@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Dawat resturant</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="topmain">
+                    <div class="contact">
+                        <h2><span><i class="far fa-envelope"></i></span>Email: Info@resturant.Com</h2>
+                        <h2><span><i class="fas fa-phone-alt"></i></span>Telephone: +1 800 234 5678</h2>
+                    </div>
+                    <div class="contact-icon">
+                        <p><i class="fab fa-facebook-f"></i></p>
+                        <p><i class="fab fa-twitter"></i></p>
+                        <p><i class="fas fa-globe"></i></p>
+                        <p><i class="fab fa-behance"></i></p>
+                        <p><i class="fas fa-rss"></i></p>
+                        <a href="#">Book a table</a>
+                    </div>
+                </div>
+                <div id="nav" class="header-desktop">
+                    <div class="brand">
+                        <img src="./images/main_logo.png" alt="logo">
+                    </div>
+                    <div class="headerlinks">
+                        <div class="desktop-header-links">
+                            <a href="/">Home</a>
+                            <a href="#about">About Us</a>
+                            <a href="#Offer">Offer</a>
+                            <a href="#Menu">Menu</a>
+                            <a href="#Team">Team</a>
+                            <a href="#Gallery">Gallery</a>
+                            <a href="#Contact">Contact</a>
+                        </div>
+                        <div class="search-box">
+                            <button class="btn-search"><i class="fas fa-search"></i></button>
+                            <input type="text" class="input-search" placeholder="Type to Search...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="navsticky" class="headersticky-desktop">
+            <div class="brand">
+                <img src="./images/main_logo_black.png" alt="logo">
+            </div>
+            <div class="headerlinkssticky">
+                <div class="desktop-header-links-sticky">
+                    <a href="/">Home</a>
+                    <a href="#about">About Us</a>
+                    <a href="#Offer">Offer</a>
+                    <a href="#Menu">Menu</a>
+                    <a href="#Team">Team</a>
+                    <a href="#Gallery">Gallery</a>
+                    <a href="#Contact">Contact</a>
+                </div>
+                <div class="search-box-sticky">
+                    <button class="btn-search-sticky"><i class="fas fa-search"></i></button>
+                    <input type="text" class="input-search-sticky" placeholder="Type to Search...">
+                </div>
+            </div>
+        </div>
+        <div class="mobile-header">
+            <div class="mobile-navbar">
+                <div class="mobile-brand">
+                    <img src="./images/main_logo.png" alt="logo">
+                </div>
+                <div class="sidebar-open-button">
+                    <button onclick="openMenu()">
+                        &#9776;
+                    </button>
+                </div>
+            </div>
+            <div class="k-zigzag"></div>
+            <aside class="sidebar">
+                <button class="sidebar-close-button" onClick="closeMenu()">X</button>
+                <ul>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#Offer">Offer</a>
+                    </li>
+                    <li>
+                        <a href="#Menu">Menu</a>
+                    </li>
+                    <li>
+                        <a href="#Team">Team</a>
+                    </li>
+                    <li>
+                        <a href="#Gallery">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="#Contact">Contact</a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+        <div class="slider-box">
+            <div id="slider">
+                <div class="slider1">
+                    <img class="sliderimage" src="./images/promo_slide_1.jpg" alt="slider1">
+                    <div class="slidertxt">
+                        <h1>Get Ready</h1>
+                        <h2>To<span> Join </span> With Us</h2>
+                        <button>Book A Table</button>
+                    </div>
+                </div>
+                <div class="slider2">
+                    <img class="sliderimage" src="./images/promo_slide_2.jpg" alt="slider2">
+                    <div class="slidertxt">
+                        <h1>Welcome</h1>
+                        <h2>To<span> Join </span> With Us</h2>
+                        <button>Book A Table</button>
+                    </div>
+                </div>
+                <div class="slider3">
+                    <img class="sliderimage" src="./images/promo_slide_2.jpg" alt="slider2">
+                    <div class="slidertxt">
+                        <h1>Get Ready</h1>
+                        <h2>To<span> Join </span> With Us</h2>
+                        <button>Book A Table</button>
+                    </div>
+                </div>
+            </div>
+            <div class="arrow-slider">
+                <h1 onclick="prev()" id="arrow1"><i class="fas fa-chevron-left"></i></h1>
+                <h1 onclick="next()" id="arrow2"><i class="fas fa-chevron-right"></i></h1>
+            </div>
+            <div class="indicators">
+                <span id="btn1" class="indicators-active"></span>
+                <span id="btn2"></span>
+                <span id="btn3"></span>
+            </div>
+
+        </div>
+        <div class="h-zigzag"></div>
+    </div>
+
+
+    <div id="about" class="our-story">
+        <div class="our-story-heading">
+            <h1>Our Story</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 left-side-story">
+                    <p><span>M</span>olestias fuga praesentium quod sint ratione cumque vitae aut a laboriosam
+                        unde.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio quaerat expedita fuga
+                        quidem. Asperiores maiores aliquid dolorem dicta.
+                        Perspiciatis nostrum hic voluptatibus ducimus, eaque itaque sed commodi minus dolore magni
+                        excepturi error! Enim quibusdam consequuntur earum mollitia quo iste et omnis quis at a? Modi
+                        consequatur ipsam expedita.
+                        Ullam reprehenderit magni doloremque eveniet nobis quis laborum esse veritatis repellat nesciunt
+                        beatae ipsum quod, temporibus corrupti ratione ab sequi porro deserunt natus accusantium velit
+                        reiciendis.</p>
+                </div>
+                <div class="col-lg-6 left-side-story">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio quaerat expedita fuga
+                        quidem. Asperiores maiores aliquid dolorem dicta. Molestias fuga praesentium quod sint ratione
+                        cumque vitae aut a laboriosam unde.
+                        Perspiciatis nostrum hic voluptatibus ducimus, eaque itaque sed commodi minus dolore magni
+                        excepturi error! Enim quibusdam consequuntur earum mollitia quo iste et omnis quis at a? Modi
+                        consequatur ipsam expedita.
+                        Ullam reprehenderit magni doloremque eveniet nobis quis laborum esse veritatis repellat nesciunt
+                        beatae ipsum quod, temporibus corrupti ratione ab sequi porro deserunt natus accusantium velit
+                        reiciendis.</p>
+                </div>
+            </div>
+        </div>
+        <div class="signature">
+            <img src="./images/about_sign.png" alt="signature">
+        </div>
+    </div>
+    <div class="i-zigzag"></div>
+    <div id="Offer" class="special-package">
+        <div class="specialpackage-heading">
+            <h1>Special Packages</h1>
+            <img src="./images/red seperator.png" alt="separator">
+        </div>
+        <div class="container">
+            <div class="package-slider-box">
+                <div id="slider-package">
+                    <div class="sliderpackage">
+                        <div class="packageimage">
+                            <img src="./images/promo_slide_1.jpg" alt="package">
+                        </div>
+                        <div class="packagebox">
+                            <h1>50% off for 9" - 12" pizza-Wed, Thu, Fri Only</h1>
+                            <p>pizza 12 inch + 1 Side Dish + 1.5L Coke Bottle Only from 209.000</p>
+                            <a href="#">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="sliderpackage">
+                        <div class="packageimage">
+                            <img src="./images/promo_slide_2.jpg" alt="package">
+                        </div>
+                        <div class="packagebox">
+                            <h1>50% off for 9" - 12" pizza-Wed, Thu, Fri Only</h1>
+                            <p>pizza 12 inch + 1 Side Dish + 1.5L Coke Bottle Only from 209.000</p>
+                            <a href="#">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="sliderpackage">
+                        <div class="packageimage">
+                            <img src="./images/promo_slide_3.jpg" alt="package">
+                        </div>
+                        <div class="packagebox">
+                            <h1>50% off for 9" - 12" pizza-Wed, Thu, Fri Only</h1>
+                            <p>pizza 12 inch + 1 Side Dish + 1.5L Coke Bottle Only from 209.000</p>
+                            <a href="#">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="indicators-package">
+            <span id="btn4" class="indicators-active"></span>
+            <span id="btn5"></span>
+            <span id="btn6"></span>
+        </div>
+    </div>
+    <div class="j-zigzag"></div>
+    <div id="Menu" class="today-menu">
+        <div class="container">
+            <div class="row">
+                <div class="menu-header">
+                    <h1>Todays menu</h1>
+                    <img src="./images/red seperator.png" alt="separator">
+                </div>
+                <div class="menu-tab-bar">
+                    <button id="btn-all">ALL</button>
+                    <button id="btn-breakfast" href="#">BREAKFAST</button>
+                    <button id="btn-lunch" href="#">LUNCH</button>
+                    <button id="btn-dinner" href="#">DINNER</button>
+                    <button id="btn-coffee" href="#">COFFEE</button>
+                    <button id="btn-snakes" href="#">SNAKES</button>
+                </div>
+                <div class="all">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="menu-card">
+                                    <div class="menu-item-image">
+                                        <img src="./images/menu_1.jpg" alt="menu">
+                                    </div>
+                                    <div class="menu-description-heading">
+                                        <h1>Cupcake recepies</h1>
+                                        <div class="menu-description">
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Juice Fruit</li>
+                                                    <li>- Vegetable</li>
+                                                    <li>- Tomato</li>
+                                                </ul>
+
+                                            </div>
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Chicken</li>
+                                                    <li>- Milk</li>
+                                                    <li>- Chilli</li>
+                                                </ul>
+                                            </div>
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Cherry</li>
+                                                    <li>- Potato</li>
+                                                    <li>- Sesame</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item-price">
+                                        <p>$20.00</p>
+                                    </div>
+                                </div>
+                                <div class="menu-card">
+                                    <div class="menu-item-image">
+                                        <img src="./images/menu_2.jpg" alt="menu">
+                                    </div>
+                                    <div class="menu-description-heading">
+                                        <h1>Cupcake recepies</h1>
+                                        <div class="menu-description">
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Juice Fruit</li>
+                                                    <li>- Vegetable</li>
+                                                    <li>- Tomato</li>
+                                                </ul>
+                                            </div>
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Chicken</li>
+                                                    <li>- Milk</li>
+                                                    <li>- Chilli</li>
+                                                </ul>
+                                            </div>
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Cherry</li>
+                                                    <li>- Potato</li>
+                                                    <li>- Sesame</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item-price">
+                                        <p>$17.00</p>
+                                    </div>
+                                </div>
+                                <div class="menu-card">
+                                    <div class="menu-item-image">
+                                        <img src="./images/menu_3.jpg" alt="menu">
+                                    </div>
+                                    <div class="menu-description-heading">
+                                        <h1>Cupcake recepies</h1>
+                                        <div class="menu-description">
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Juice Fruit</li>
+                                                    <li>- Vegetable</li>
+                                                    <li>- Tomato</li>
+                                                </ul>
+                                            </div>
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Chicken</li>
+                                                    <li>- Milk</li>
+                                                    <li>- Chilli</li>
+                                                </ul>
+                                            </div>
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Cherry</li>
+                                                    <li>- Potato</li>
+                                                    <li>- Sesame</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item-price">
+                                        <p>$120.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="menu-card">
+                                    <div class="menu-item-image">
+                                        <img src="./images/menu_4.jpg" alt="menu">
+                                    </div>
+                                    <div class="menu-description-heading">
+                                        <h1>Cupcake recepies</h1>
+                                        <div class="menu-description">
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Juice Fruit</li>
+                                                    <li>- Vegetable</li>
+                                                    <li>- Tomato</li>
+                                                </ul>
+                                            </div>
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Chicken</li>
+                                                    <li>- Milk</li>
+                                                    <li>- Chilli</li>
+                                                </ul>
+                                            </div>
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Cherry</li>
+                                                    <li>- Potato</li>
+                                                    <li>- Sesame</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item-price">
+                                        <p>$22.00</p>
+                                    </div>
+                                </div>
+                                <div class="menu-card">
+                                    <div class="menu-item-image">
+                                        <img src="./images/menu_5.jpg" alt="menu">
+                                    </div>
+                                    <div class="menu-description-heading">
+                                        <h1>Cupcake recepies</h1>
+                                        <div class="menu-description">
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Juice Fruit</li>
+                                                    <li>- Vegetable</li>
+                                                    <li>- Tomato</li>
+                                                </ul>
+                                            </div>
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Chicken</li>
+                                                    <li>- Milk</li>
+                                                    <li>- Chilli</li>
+                                                </ul>
+                                            </div>
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Cherry</li>
+                                                    <li>- Potato</li>
+                                                    <li>- Sesame</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item-price">
+                                        <p>$28.00</p>
+                                    </div>
+                                </div>
+                                <div class="menu-card">
+                                    <div class="menu-item-image">
+                                        <img src="./images/menu_6.jpg" alt="menu">
+                                    </div>
+                                    <div class="menu-description-heading">
+                                        <h1>Cupcake recepies</h1>
+                                        <div class="menu-description">
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Juice Fruit</li>
+                                                    <li>- Vegetable</li>
+                                                    <li>- Tomato</li>
+                                                </ul>
+                                            </div>
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Chicken</li>
+                                                    <li>- Milk</li>
+                                                    <li>- Chilli</li>
+                                                </ul>
+                                            </div>
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Cherry</li>
+                                                    <li>- Potato</li>
+                                                    <li>- Sesame</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item-price">
+                                        <p>$100.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="breakfast">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="menu-card">
+                                    <div class="menu-item-image">
+                                        <img src="./images/menu_1.jpg" alt="menu">
+                                    </div>
+                                    <div class="menu-description-heading">
+                                        <h1>Cupcake recepies</h1>
+                                        <div class="menu-description">
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Juice Fruit</li>
+                                                    <li>- Vegetable</li>
+                                                    <li>- Tomato</li>
+                                                </ul>
+                                            </div>
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Chicken</li>
+                                                    <li>- Milk</li>
+                                                    <li>- Chilli</li>
+                                                </ul>
+                                            </div>
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Cherry</li>
+                                                    <li>- Potato</li>
+                                                    <li>- Sesame</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item-price">
+                                        <p>$20.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="menu-card">
+                                    <div class="menu-item-image">
+                                        <img src="./images/menu_6.jpg" alt="menu">
+                                    </div>
+                                    <div class="menu-description-heading">
+                                        <h1>Cupcake recepies</h1>
+                                        <div class="menu-description">
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Juice Fruit</li>
+                                                    <li>- Vegetable</li>
+                                                    <li>- Tomato</li>
+                                                </ul>
+                                            </div>
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Chicken</li>
+                                                    <li>- Milk</li>
+                                                    <li>- Chilli</li>
+                                                </ul>
+                                            </div>
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Cherry</li>
+                                                    <li>- Potato</li>
+                                                    <li>- Sesame</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item-price">
+                                        <p>$100.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="lunch">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="menu-card">
+                                    <div class="menu-item-image">
+                                        <img src="./images/menu_1.jpg" alt="menu">
+                                    </div>
+                                    <div class="menu-description-heading">
+                                        <h1>Cupcake recepies</h1>
+                                        <div class="menu-description">
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Juice Fruit</li>
+                                                    <li>- Vegetable</li>
+                                                    <li>- Tomato</li>
+                                                </ul>
+                                            </div>
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Chicken</li>
+                                                    <li>- Milk</li>
+                                                    <li>- Chilli</li>
+                                                </ul>
+                                            </div>
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Cherry</li>
+                                                    <li>- Potato</li>
+                                                    <li>- Sesame</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item-price">
+                                        <p>$20.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="menu-card">
+                                    <div class="menu-item-image">
+                                        <img src="./images/menu_4.jpg" alt="menu">
+                                    </div>
+                                    <div class="menu-description-heading">
+                                        <h1>Cupcake recepies</h1>
+                                        <div class="menu-description">
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Juice Fruit</li>
+                                                    <li>- Vegetable</li>
+                                                    <li>- Tomato</li>
+                                                </ul>
+                                            </div>
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Chicken</li>
+                                                    <li>- Milk</li>
+                                                    <li>- Chilli</li>
+                                                </ul>
+                                            </div>
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Cherry</li>
+                                                    <li>- Potato</li>
+                                                    <li>- Sesame</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item-price">
+                                        <p>$22.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dinner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="menu-card">
+                                    <div class="menu-item-image">
+                                        <img src="./images/menu_1.jpg" alt="menu">
+                                    </div>
+                                    <div class="menu-description-heading">
+                                        <h1>Cupcake recepies</h1>
+                                        <div class="menu-description">
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Juice Fruit</li>
+                                                    <li>- Vegetable</li>
+                                                    <li>- Tomato</li>
+                                                </ul>
+                                            </div>
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Chicken</li>
+                                                    <li>- Milk</li>
+                                                    <li>- Chilli</li>
+                                                </ul>
+                                            </div>
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Cherry</li>
+                                                    <li>- Potato</li>
+                                                    <li>- Sesame</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item-price">
+                                        <p>$20.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="menu-card">
+                                    <div class="menu-item-image">
+                                        <img src="./images/menu_4.jpg" alt="menu">
+                                    </div>
+                                    <div class="menu-description-heading">
+                                        <h1>Cupcake recepies</h1>
+                                        <div class="menu-description">
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Juice Fruit</li>
+                                                    <li>- Vegetable</li>
+                                                    <li>- Tomato</li>
+                                                </ul>
+                                            </div>
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Chicken</li>
+                                                    <li>- Milk</li>
+                                                    <li>- Chilli</li>
+                                                </ul>
+                                            </div>
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Cherry</li>
+                                                    <li>- Potato</li>
+                                                    <li>- Sesame</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item-price">
+                                        <p>$22.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="coffee">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="menu-card">
+                                    <div class="menu-item-image">
+                                        <img src="./images/menu_1.jpg" alt="menu">
+                                    </div>
+                                    <div class="menu-description-heading">
+                                        <h1>Cupcake recepies</h1>
+                                        <div class="menu-description">
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Juice Fruit</li>
+                                                    <li>- Vegetable</li>
+                                                    <li>- Tomato</li>
+                                                </ul>
+                                            </div>
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Chicken</li>
+                                                    <li>- Milk</li>
+                                                    <li>- Chilli</li>
+                                                </ul>
+                                            </div>
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Cherry</li>
+                                                    <li>- Potato</li>
+                                                    <li>- Sesame</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item-price">
+                                        <p>$20.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="menu-card">
+                                    <div class="menu-item-image">
+                                        <img src="./images/menu_4.jpg" alt="menu">
+                                    </div>
+                                    <div class="menu-description-heading">
+                                        <h1>Cupcake recepies</h1>
+                                        <div class="menu-description">
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Juice Fruit</li>
+                                                    <li>- Vegetable</li>
+                                                    <li>- Tomato</li>
+                                                </ul>
+                                            </div>
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Chicken</li>
+                                                    <li>- Milk</li>
+                                                    <li>- Chilli</li>
+                                                </ul>
+                                            </div>
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Cherry</li>
+                                                    <li>- Potato</li>
+                                                    <li>- Sesame</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item-price">
+                                        <p>$22.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="snakes">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="menu-card">
+                                    <div class="menu-item-image">
+                                        <img src="./images/menu_1.jpg" alt="menu">
+                                    </div>
+                                    <div class="menu-description-heading">
+                                        <h1>Cupcake recepies</h1>
+                                        <div class="menu-description">
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Juice Fruit</li>
+                                                    <li>- Vegetable</li>
+                                                    <li>- Tomato</li>
+                                                </ul>
+                                            </div>
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Chicken</li>
+                                                    <li>- Milk</li>
+                                                    <li>- Chilli</li>
+                                                </ul>
+                                            </div>
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Cherry</li>
+                                                    <li>- Potato</li>
+                                                    <li>- Sesame</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item-price">
+                                        <p>$20.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="menu-card">
+                                    <div class="menu-item-image">
+                                        <img src="./images/menu_4.jpg" alt="menu">
+                                    </div>
+                                    <div class="menu-description-heading">
+                                        <h1>Cupcake recepies</h1>
+                                        <div class="menu-description">
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Juice Fruit</li>
+                                                    <li>- Vegetable</li>
+                                                    <li>- Tomato</li>
+                                                </ul>
+                                            </div>
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Chicken</li>
+                                                    <li>- Milk</li>
+                                                    <li>- Chilli</li>
+                                                </ul>
+                                            </div>
+                                            <div class="item-description">
+                                                <ul>
+                                                    <li>- Cherry</li>
+                                                    <li>- Potato</li>
+                                                    <li>- Sesame</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item-price">
+                                        <p>$22.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="i-zigzag"></div>
+    <div class="book-table-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="book-table-banner-inner">
+                        <h1>BOOK A TABLE NOW !</h1>
+                        <a href="#">BOOK NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="j-zigzag"></div>
+    <div id="Team" class="our-chefs">
+        <div class="container">
+            <div class="row">
+                <div class="our-chefs-header">
+                    <h1>Our Chefs</h1>
+                    <img src="./images/red seperator.png" alt="separator">
+                </div>
+                <div class="chef-card">
+                    <div class="chef-card-details">
+                        <img src="./images/team-1.jpg" alt="team">
+                        <h1>Mark Angellia</h1>
+                        <p>Modi consequatur ipsam expedita.</p>
+                    </div>
+                    <div class="chef-card-details">
+                        <img src="./images/team-2.jpg" alt="team">
+                        <h1>Angel Meskat</h1>
+                        <p>Modi consequatur ipsam expedita.</p>
+                    </div>
+                    <div class="chef-card-details">
+                        <img src="./images/team-3.jpg" alt="team">
+                        <h1>John doe</h1>
+                        <p>Modi consequatur ipsam expedita.</p>
+                    </div>
+                    <div class="chef-card-details">
+                        <img src="./images/team-4.jpg" alt="team">
+                        <h1>Angel D Maria</h1>
+                        <p>Modi consequatur ipsam expedita.</p>
+                    </div>
+                    <div class="chef-card-details">
+                        <img src="./images/team-5.jpg" alt="team">
+                        <h1>Park Ji Sung</h1>
+                        <p>Modi consequatur ipsam expedita.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="i-zigzag"></div>
+    <div class="blog">
+        <div class="bloag-header">
+            <h1>Latest News</h1>
+            <img src="./images/red seperator.png" alt="separator">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="blog-details">
+                    <div class="blog-card">
+                        <img src="./images/blog-1.jpg" alt="blog">
+                        <h1>Resturant Welcome Day Meetup</h1>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio quaerat expedita
+                            fugaquidem.</p>
+                        <div class="blog-card-bottom">
+                            <div class="date">
+                                <p>07-09-2021</p>
+                            </div>
+                            <div class="comment">
+                                <p>5 Comments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <img src="./images/blog-2.jpg" alt="blog">
+                        <h1>Received First day First Reservation</h1>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio quaerat expedita
+                            fugaquidem.</p>
+                        <div class="blog-card-bottom">
+                            <div class="date">
+                                <p>07-09-2021</p>
+                            </div>
+                            <div class="comment">
+                                <p>5 Comments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <img src="./images/blog-3.jpg" alt="blog">
+                        <h1>Home to Get your Home Delivery ?</h1>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio quaerat expedita
+                            fugaquidem.</p>
+                        <div class="blog-card-bottom">
+                            <div class="date">
+                                <p>07-09-2021</p>
+                            </div>
+                            <div class="comment">
+                                <p>5 Comments</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="j-zigzag"></div>
+    <div id="Gallery" class="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="gallery-header">
+                    <h1>Gallery</h1>
+                    <img src="./images/red seperator.png" alt="separator">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="i-zigzag"></div>
+    <div id="Contact" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-details">
+                    <img src="./images/main_logo.png" alt="logo">
+                    <h3>20. floor, queenslad victoria building, 60 california street, california USA </h3>
+                    <p>Hello@dawat.com</p>
+                    <h4>+ 88 000 0000 1111</h4>
+                </div>
+                <div class="social-icon">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fas fa-globe"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-skype"></i></a>
+                </div>
+                <div class="copyright">
+                    <div class="copyright-details">
+                        <div class="details-copyright-footer">
+                            <a href="#">Tearms of use</a>
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Sitemap</a>
+                            <a href="#">Contact</a>
+                        </div>
+                        <div class="copyright-text">
+                            <p>@2021 <span>dawat resturant</span> Developed By Sourav Gupta</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button onclick="topFunction()" id="scroolbtn" title="top"><i class="fas fa-arrow-up"></i></button>
+    </div>
+    <script src="/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            var mybutton = document.getElementById("scroolbtn");
+            window.onscroll = function() {scrollFunction()};
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+    <script>
+        window.onscroll = function () {
+            myFunction()
+        };
+
+        var header = document.getElementById("navsticky");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+ 
+    <script>
+        $(document).ready(function () {
+            $('#btn-all').click(function () {
+                $('.all').show();
+                $('.menu-card').animate({
+                    transition: '.5s ease-in-out'
+                });
+                $('.breakfast').hide();
+                $('.lunch').hide();
+                $('.dinner').hide();
+                $('.coffee').hide();
+                $('.snakes').hide();
+                $('#btn-all').addClass('button-active');
+                $('#btn-breakfast').removeClass('button-active');
+                $('#btn-lunch').removeClass('button-active');
+                $('#btn-dinner').removeClass('button-active');
+                $('#btn-coffee').removeClass('button-active');
+                $('#btn-snakes').removeClass('button-active');
+
+            });
+            $('#btn-breakfast').click(function () {
+                $('.all').hide();
+                $('.breakfast').show();
+                $('.menu-card').animate({
+                    transition: '.5s ease-in-out'
+                });
+                $('.lunch').hide();
+                $('.dinner').hide();
+                $('.coffee').hide();
+                $('.snakes').hide();
+                $('#btn-all').removeClass('button-active');
+                $('#btn-breakfast').addClass('button-active');
+                $('#btn-lunch').removeClass('button-active');
+                $('#btn-dinner').removeClass('button-active');
+                $('#btn-coffee').removeClass('button-active');
+                $('#btn-snakes').removeClass('button-active');
+            });
+            $('#btn-lunch').click(function () {
+                $('.all').hide();
+                $('.breakfast').hide();
+                $('.menu-card').animate({
+                    transition: '.5s ease-in-out'
+                });
+                $('.lunch').show();
+                $('.dinner').hide();
+                $('.coffee').hide();
+                $('.snakes').hide();
+                $('#btn-all').removeClass('button-active');
+                $('#btn-breakfast').removeClass('button-active');
+                $('#btn-lunch').addClass('button-active');
+                $('#btn-dinner').removeClass('button-active');
+                $('#btn-coffee').removeClass('button-active');
+                $('#btn-snakes').removeClass('button-active');
+            });
+            $('#btn-dinner').click(function () {
+                $('.all').hide();
+                $('.breakfast').hide();
+                $('.menu-card').animate({
+                    transition: '.5s ease-in-out'
+                });
+                $('.lunch').hide();
+                $('.dinner').show();
+                $('.coffee').hide();
+                $('.snakes').hide();
+                $('#btn-all').removeClass('button-active');
+                $('#btn-breakfast').removeClass('button-active');
+                $('#btn-lunch').removeClass('button-active');
+                $('#btn-dinner').addClass('button-active');
+                $('#btn-coffee').removeClass('button-active');
+                $('#btn-snakes').removeClass('button-active');
+            });
+            $('#btn-coffee').click(function () {
+                $('.all').hide();
+                $('.breakfast').hide()
+                $('.menu-card').animate({
+                    transition: '.5s ease-in-out'
+                });
+                $('.lunch').hide();
+                $('.dinner').hide();
+                $('.coffee').show();
+                $('.snakes').hide();
+                $('#btn-all').removeClass('button-active');
+                $('#btn-breakfast').removeClass('button-active');
+                $('#btn-lunch').removeClass('button-active');
+                $('#btn-dinner').removeClass('button-active');
+                $('#btn-coffee').addClass('button-active');
+                $('#btn-snakes').removeClass('button-active');
+            });
+            $('#btn-snakes').click(function () {
+                $('.all').hide();
+                $('.breakfast').hide();
+                $('.menu-card').animate({
+                    transition: '.5s ease-in-out'
+                });
+                $('.lunch').hide();
+                $('.dinner').hide();
+                $('.coffee').hide();
+                $('.snakes').show();
+                $('#btn-all').removeClass('button-active');
+                $('#btn-breakfast').removeClass('button-active');
+                $('#btn-lunch').removeClass('button-active');
+                $('#btn-dinner').removeClass('button-active');
+                $('#btn-coffee').removeClass('button-active');
+                $('#btn-snakes').addClass('button-active');
+            });
+        });
+    </script>
+    <script>
+        var slider_img = document.querySelector('.sliderimage');
+        var images = ['promo_slide_1.jpg', 'promo_slide_2.jpg', 'promo_slide_3.jpg'];
+        var i = 0;
+
+        function prev() {
+            if (i <= 0) i = images.length;
+            i--;
+            return setImg();
+        }
+
+        function next() {
+            if (i >= images.length - 1) i = -1;
+            i++;
+            return setImg();
+        }
+
+        function setImg() {
+            return slider_img.setAttribute('src', "images/" + images[i]);
+
+        }
+    </script>
+    <script>
+        var slidepackage = document.getElementById("slider-package");
+        var btn4 = document.getElementById('btn4');
+        var btn5 = document.getElementById('btn5');
+        var btn6 = document.getElementById('btn6');
+
+
+
+        btn4.onclick = function () {
+            slidepackage.style.transform = "translateX(0px)";
+            btn4.classList.add('indicators-active');
+            btn5.classList.remove('indicators-active');
+            btn6.classList.remove('indicators-active');
+        };
+        btn5.onclick = function () {
+            slidepackage.style.transform = "translateX(-100%)";
+            btn4.classList.remove('indicators-active');
+            btn5.classList.add('indicators-active');
+            btn6.classList.remove('indicators-active');
+        };
+        btn6.onclick = function () {
+            slidepackage.style.transform = "translateX(-200%)";
+            btn5.classList.remove('indicators-active');
+            btn4.classList.remove('indicators-active');
+            btn6.classList.add('indicators-active');
+        };
+    </script>
+    <script>
+        var slide = document.getElementById("slider");
+        var btn1 = document.getElementById('btn1');
+        var btn2 = document.getElementById('btn2');
+        var btn3 = document.getElementById('btn3');
+
+
+
+        btn1.onclick = function () {
+            slide.style.transform = "translateX(0px)";
+            btn1.classList.add('indicators-active');
+            btn2.classList.remove('indicators-active');
+            btn3.classList.remove('indicators-active');
+        };
+        btn2.onclick = function () {
+            slide.style.transform = "translateX(-100%)";
+            btn1.classList.remove('indicators-active');
+            btn2.classList.add('indicators-active');
+            btn3.classList.remove('indicators-active');
+        };
+        btn3.onclick = function () {
+            slide.style.transform = "translateX(-200%)";
+            btn1.classList.remove('indicators-active');
+            btn2.classList.remove('indicators-active');
+            btn3.classList.add('indicators-active');
+        };
+    </script>
+    <script>
+        function openMenu() {
+            document.querySelector(".sidebar").classList.add("open");
+        }
+
+        function closeMenu() {
+            document.querySelector(".sidebar").classList.remove('open');
+        }
+    </script>
+</body>
+
+</html>
