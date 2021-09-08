@@ -306,6 +306,9 @@
       transform: translateX(0);
       z-index: 99;
   }
+  #navsticky{
+    display: none !important;
+  }
     .slider-box {
       width: 100%;
       max-height: 100vh;
